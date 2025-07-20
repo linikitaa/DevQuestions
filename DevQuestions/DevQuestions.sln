@@ -1,8 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevQuestions.Domain", "src\DevQuestions.Domain\DevQuestions.Domain.csproj", "{CE8745A9-CCA7-4A30-AD8B-579F3B7C07CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AB8F89EF-CCB6-4A5E-86BD-88649BD2FB86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE8745A9-CCA7-4A30-AD8B-579F3B7C07CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE8745A9-CCA7-4A30-AD8B-579F3B7C07CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE8745A9-CCA7-4A30-AD8B-579F3B7C07CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE8745A9-CCA7-4A30-AD8B-579F3B7C07CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CE8745A9-CCA7-4A30-AD8B-579F3B7C07CA} = {AB8F89EF-CCB6-4A5E-86BD-88649BD2FB86}
 	EndGlobalSection
 EndGlobal
