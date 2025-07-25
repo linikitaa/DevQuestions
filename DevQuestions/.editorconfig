@@ -1,0 +1,68 @@
+root = true
+
+[*.cs]
+
+# Общие настройки форматирования (можешь настроить под себя)
+indent_style = space
+indent_size = 4
+end_of_line = crlf
+charset = utf-8
+insert_final_newline = true
+
+#########################
+# StyleCop отключения
+#########################
+
+# Документация
+dotnet_diagnostic.SA1600.severity = none   # элементы без документации
+dotnet_diagnostic.SA1601.severity = none   # пропущенная дока у partial классов
+dotnet_diagnostic.SA1602.severity = none   # дока у enum
+dotnet_diagnostic.SA1604.severity = none   # дока у интерфейсов
+dotnet_diagnostic.SA1611.severity = none   # параметры метода
+dotnet_diagnostic.SA1615.severity = none   # возвращаемые значения
+dotnet_diagnostic.SA1618.severity = none   # generic параметры
+dotnet_diagnostic.SA1623.severity = none   # несовпадение имени и описания
+dotnet_diagnostic.SA1633.severity = none   # файл должен содержать copyright
+
+# Пустые строки
+dotnet_diagnostic.SA1505.severity = none
+dotnet_diagnostic.SA1507.severity = none
+
+# Комментарии
+dotnet_diagnostic.SA1123.severity = none   # запрещает `//` перед `#region`
+
+# Местоположение и порядок
+dotnet_diagnostic.SA1200.severity = none   # using внутри/вне namespace
+dotnet_diagnostic.SA1201.severity = none   # порядок элементов в классе
+dotnet_diagnostic.SA1210.severity = none   # порядок using
+
+#########################
+# Полезные включенные правила
+#########################
+
+# Переменные readonly, если можно
+dotnet_diagnostic.IDE0044.severity = suggestion
+
+# async методы должны заканчиваться на Async
+dotnet_diagnostic.SA1410.severity = warning
+
+# Приватные поля должны начинаться с _
+dotnet_diagnostic.SA1309.severity = warning
+
+# Публичные и protected члены — PascalCase
+dotnet_diagnostic.SA1300.severity = warning
+
+# У модификаторов правильный порядок
+dotnet_diagnostic.SA1206.severity = warning
+
+# Использовать var/не использовать var — IDE-подсказки (на вкус)
+dotnet_diagnostic.IDE0007.severity = suggestion
+dotnet_diagnostic.IDE0008.severity = suggestion
+
+# Отступы и форматирование: пусть решает IDE
+dotnet_diagnostic.SA1500.severity = none   # всё в одном блоке
+
+# SA1206 не поддерживает порядок модификаторов с 'required' в C# 12
+dotnet_diagnostic.SA1206.severity = none
+
+dotnet_diagnostic.SA1028.severity = none
