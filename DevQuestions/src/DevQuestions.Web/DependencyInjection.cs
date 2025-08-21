@@ -1,7 +1,6 @@
-﻿using FluentValidation;
-using Microsoft.Extensions.DependencyInjection;
+﻿using DevQuestions.Application;
 
-namespace DevQuestions.Application;
+namespace DevQuestions.Web;
 
 public static class DependencyInjection
 {

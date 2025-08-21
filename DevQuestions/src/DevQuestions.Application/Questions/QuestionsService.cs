@@ -1,8 +1,10 @@
 ﻿using DevQuestion.Contracts.Questions;
 using DevQuestions.Application.Questions;
+using DevQuestions.Application.Questions.Exceptions;
 using DevQuestions.Domain.Questions;
 using FluentValidation;
 using Microsoft.Extensions.Logging;
+using Shared;
 
 namespace DevQuestions.Application;
 
@@ -26,7 +28,7 @@ public class QuestionsService : IQuestionsService
         var validationResult = await _validator.ValidateAsync(questionDto, cancellationToken);
         if (!validationResult.IsValid)
         {
-            throw new ValidationException(validationResult.Errors);
+            throw new TooManyQuestionsException([Error.FAILURE("questions.too.many", "Too many questions")]);
         }
         
         // валидация бизнес логики
@@ -55,7 +57,7 @@ public class QuestionsService : IQuestionsService
         return questionId;
     }
 
-    
+    /*
     public async Task<IActionResult> Update([FromRoute] Guid questionId, UpdateQuestionDto request, CancellationToken cancellationToken)
     {
     }
@@ -71,4 +73,5 @@ public class QuestionsService : IQuestionsService
     public async Task<IActionResult> AddAnswer([FromRoute] Guid questionId, AddAnswerDto request, CancellationToken cancellationToken)
     {
     }
+    */
 }
