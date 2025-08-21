@@ -14,7 +14,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevQuestion.Contarcts", "DevQuestion.Contarcts\DevQuestion.Contarcts.csproj", "{0E00E494-2172-4A52-A394-9D268A211330}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevQuestions.Contracts", "DevQuestions.Contracts\DevQuestions.Contracts.csproj", "{0E00E494-2172-4A52-A394-9D268A211330}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevQuestions.Application", "src\DevQuestions.Application\DevQuestions.Application.csproj", "{90AA688C-2996-4134-BACB-DCA66BFEC66C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,11 +40,16 @@ Global
 		{0E00E494-2172-4A52-A394-9D268A211330}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E00E494-2172-4A52-A394-9D268A211330}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E00E494-2172-4A52-A394-9D268A211330}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90AA688C-2996-4134-BACB-DCA66BFEC66C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90AA688C-2996-4134-BACB-DCA66BFEC66C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90AA688C-2996-4134-BACB-DCA66BFEC66C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90AA688C-2996-4134-BACB-DCA66BFEC66C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CE8745A9-CCA7-4A30-AD8B-579F3B7C07CA} = {AB8F89EF-CCB6-4A5E-86BD-88649BD2FB86}
 		{E63D921A-2544-48D6-81EA-E855B4E28064} = {AB8F89EF-CCB6-4A5E-86BD-88649BD2FB86}
 		{681F1EBA-BF3B-4135-A1A1-EB1E9CA4FDD3} = {AB8F89EF-CCB6-4A5E-86BD-88649BD2FB86}
 		{0E00E494-2172-4A52-A394-9D268A211330} = {AB8F89EF-CCB6-4A5E-86BD-88649BD2FB86}
+		{90AA688C-2996-4134-BACB-DCA66BFEC66C} = {AB8F89EF-CCB6-4A5E-86BD-88649BD2FB86}
 	EndGlobalSection
 EndGlobal
